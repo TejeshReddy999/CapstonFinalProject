@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:Cardview="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/id_cardview"
+    android:layout_width="@dimen/dime180dp"
+    android:layout_height="@dimen/dime280dp"
+    Cardview:cardCornerRadius="@dimen/dime4dp">
+
+    <ImageView
+        android:id="@+id/id_MovieImage"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dime280dp"
+        android:layout_margin="@dimen/dime1dp"
+        android:scaleType="centerCrop"
+        android:contentDescription="@string/shows_the_posteer_for_popular_movies_and_tv_shows" />
+
+</android.support.v7.widget.CardView>

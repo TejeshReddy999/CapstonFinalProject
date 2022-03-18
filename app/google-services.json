@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "125232776482",
+    "firebase_url": "https://moviemagazine-19e1d.firebaseio.com",
+    "project_id": "moviemagazine-19e1d",
+    "storage_bucket": "moviemagazine-19e1d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:125232776482:android:394c4b2c16c63043",
+        "android_client_info": {
+          "package_name": "com.example.sunny.moviemagazine"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "125232776482-hlka4jogi8dqa1q4oopp57emsjl0k6e1.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.sunny.moviemagazine",
+            "certificate_hash": "58e316a33efdc41573269f8be9df8f98e8990b22"
+          }
+        },
+        {
+          "client_id": "125232776482-sc0jaio1ln1090moauhu7eopijncnvvu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDHp0-mYgDe5eYePlUOvueaRnoLbwtAL7A"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "125232776482-sc0jaio1ln1090moauhu7eopijncnvvu.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

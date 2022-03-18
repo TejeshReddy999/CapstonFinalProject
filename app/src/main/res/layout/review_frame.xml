@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/margin10dp"
+    android:background="@drawable/backgroundshape"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="@dimen/dime40dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_person_black_24dp"
+            android:contentDescription="@string/decribes_the_author" />
+
+        <TextView
+            android:id="@+id/id_Author"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/dime20sp"
+            android:textColor="@color/PUREWHITE"
+            android:textStyle="bold"
+            tools:text="Author" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/id_Review"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="@dimen/margin10dp"
+        android:textColor="@color/PUREWHITE"
+        android:textSize="@dimen/dime15sp"
+        tools:text="Review" />
+</LinearLayout>

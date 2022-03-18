@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/id_coordlay"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.sunny.moviemagazine.MovieInfo">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/id_appbarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dime220dp"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <android.support.design.widget.CollapsingToolbarLayout
+            android:id="@+id/id_collapsingtoolbar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:contentScrim="?android:attr/colorPrimary"
+            app:expandedTitleMarginEnd="@dimen/dime64dp"
+            app:expandedTitleMarginStart="@dimen/dime12dp"
+            app:layout_scrollFlags="exitUntilCollapsed|scroll"
+            app:title="MovieTitle">
+
+            <ImageView
+                android:id="@+id/id_Moviiiimg"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dime220dp"
+                android:scaleType="fitXY"
+                android:contentDescription="@string/backdrop_image_will_be_displayed"
+                android:src="@mipmap/ic_launcher"
+                app:layout_collapseMode="parallax"
+                app:layout_collapseParallaxMultiplier="1.0" />
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/id_toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?android:attr/actionBarSize"
+                app:layout_collapseMode="pin"
+                app:popupTheme="@style/Theme.AppCompat.Light.DarkActionBar">
+
+            </android.support.v7.widget.Toolbar>
+        </android.support.design.widget.CollapsingToolbarLayout>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="@dimen/margin10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="10">
+
+                <TextView
+                    android:id="@+id/id_MOVIETITLE"
+                    android:layout_width="@dimen/dime0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/margin10dp"
+                    android:layout_weight="9"
+                    android:gravity="start"
+                    android:text="@string/movie_title"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/dime20sp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/id_farvorit"
+                    android:layout_width="@dimen/dime0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:layout_weight="1"
+                    android:onClick="clickFavroit"
+                    android:src="@drawable/ic_favorite_border_black_24dp"
+                    android:contentDescription="@string/using_to_add_favourits" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="0.5dp">
+
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="@dimen/padd2dp">
+
+                    <ImageView
+                        android:layout_width="@dimen/dime100sp"
+                        android:layout_height="@dimen/dime100sp"
+                        android:src="@drawable/cal"
+                        android:contentDescription="@string/it_indicates_the_relese_date_for_popular_movies_and_first_air_free_date_fir_tv_shows" />
+
+                    <TextView
+                        android:id="@+id/id_MOVIEREALEASEDATE"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:textColor="@color/maincolor"
+                        android:textSize="@dimen/dime13sp"
+                        android:textStyle="bold" />
+                </FrameLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/id_MOVIERATING"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dime30dp"
+                        android:layout_margin="@dimen/margin10dp"
+                        android:gravity="center"
+                        android:text="@string/rating"
+                        android:textColor="@color/blackpure"
+                        android:textSize="@dimen/dime20sp"
+                        android:textStyle="bold" />
+
+                    <RatingBar
+                        android:id="@+id/id_ratingbar"
+                        style="@style/Widget.AppCompat.RatingBar.Small"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/margin10dp"
+                        android:numStars="10"
+                        android:progressTint="@color/maincolor" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/dime5dp">
+
+                <ImageView
+                    android:layout_width="@dimen/dime50dp"
+                    android:layout_height="@dimen/dime50dp"
+                    android:src="@drawable/reel"
+                    android:contentDescription="@string/it_indicates_the_overview_of_the_of_the_popular_movies_and_tv_shows" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/margin10dp"
+                    android:text="@string/overview"
+                    android:textAlignment="textEnd"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/dime23sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/id_DESCRIPTION"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="@dimen/margin10dp"
+                android:textSize="@dimen/dime15sp"
+                tools:text="Description" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="@dimen/dime48dp"
+                    android:layout_height="match_parent"
+                    android:padding="@dimen/dime8dp"
+                    android:src="@drawable/clapperboard"
+                    android:contentDescription="@string/it_indicates_the_movie_and_tvshows_trailers" />
+
+                <TextView
+                    android:id="@+id/id_errort"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/margin10dp"
+                    android:text="@string/trailers"
+                    android:textAlignment="textEnd"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/dime23sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/id_RECYCLERVIEWVID"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </android.support.v7.widget.RecyclerView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="@dimen/dime48dp"
+                    android:layout_height="@dimen/dime48dp"
+                    android:padding="@dimen/dime5dp"
+                    android:src="@drawable/ic_rate_review_black_24dp"
+                    android:contentDescription="@string/it_indicates_the_reviwes_for_popular_movies" />
+
+                <TextView
+                    android:id="@+id/id_errorr"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/dime5dp"
+                    android:text="@string/reviews"
+                    android:textAlignment="textEnd"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/dime23sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/id_RECYCLERVIEWREV"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </android.support.v7.widget.RecyclerView>
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+</android.support.design.widget.CoordinatorLayout>

@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/blur2"
+    android:padding="@dimen/paddin25sp"
+    android:orientation="vertical"
+    app:mtf_openKeyboardOnFocus="false"
+    tools:context=".Registration">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="&#xA;&lt;LinearLayout xmlns:android=&quot;http://schemas.android.com/apk/res/android&quot;&#xA;    xmlns:app=&quot;http://schemas.android.com/apk/res-auto&quot;&#xA;    xmlns:tools=&quot;http://schemas.android.com/tools&quot;&#xA;    android:layout_width=&quot;match_parent&quot;&#xA;    android:layout_height=&quot;match_parent&quot;" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dime100dp"
+        android:src="@drawable/ic_person_add_black_24dp"
+        android:contentDescription="@string/this_indicates_the_user_to_rester_or_add_his_particulars_to_registers" />
+    <com.github.florent37.materialtextfield.MaterialTextField
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:mtf_image="@mipmap/ic_email"
+        app:mtf_labelColor="@color/PUREWHITE"
+        app:mtf_openKeyboardOnFocus="true">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="serif"
+            android:id="@+id/id_emailregister"
+            android:hint="@string/enter_email"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/dime15sp" />
+    </com.github.florent37.materialtextfield.MaterialTextField>
+
+    <com.github.florent37.materialtextfield.MaterialTextField
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:mtf_image="@mipmap/ic_password"
+        app:mtf_labelColor="@color/PUREWHITE"
+        app:mtf_openKeyboardOnFocus="true">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="serif"
+            android:inputType="textPassword"
+            android:id="@+id/id_passwordregister"
+            android:hint="@string/enter_your_password"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/dime15sp" />
+    </com.github.florent37.materialtextfield.MaterialTextField>
+    <Button
+        android:id="@+id/id_buttonRegister"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dime45dp"
+        android:background="@null"
+        android:fontFamily="serif"
+        android:text="@string/register"
+        android:textAllCaps="false"
+        android:textStyle="bold"
+        android:textColor="@color/PUREWHITE"
+        android:textSize="@dimen/dime15sp" />
+    <Button
+        android:id="@+id/id_buttonAlredyRegister"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin10dp"
+        android:background="@null"
+        android:textAllCaps="false"
+        android:fontFamily="serif"
+        android:onClick="clickAlreadyRegistred"
+        android:text="@string/already_registred_then_login"
+        android:textStyle="bold"
+        android:textColor="@color/PUREWHITE"
+        android:textSize="@dimen/dime15sp" />
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_gravity="center|bottom"
+            android:visibility="gone" />
+    <com.google.android.gms.ads.AdView
+        xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/banner"
+        android:layout_width="match_parent"
+        android:background="#656566"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"
+        ads:adSize="BANNER"
+        ads:adUnitId="ca-app-pub-6336523906622902/1584570296"
+        />
+    </LinearLayout>
+    </ScrollView>
+</LinearLayout>

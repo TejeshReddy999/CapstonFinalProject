@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="paddin25sp">25sp</dimen>
+    <dimen name="dime200dp">200dp</dimen>
+
+
+    <!--
+Refer to App Widget Documentation for margin information
+http://developer.android.com/guide/topics/appwidgets/index.html#CreatingLayout
+    -->
+    <dimen name="widget_margin">8dp</dimen>
+    <dimen name="twelvesp">24sp</dimen>
+    <dimen name="dime15sp">15sp</dimen>
+    <dimen name="margin10dp">10dp</dimen>
+    <dimen name="dime220dp">220dp</dimen>
+    <dimen name="dime64dp">64dp</dimen>
+    <dimen name="dime12dp">12dp</dimen>
+    <dimen name="dime20sp">20sp</dimen>
+    <dimen name="dime0dp">0dp</dimen>
+    <dimen name="padd2dp">2dp</dimen>
+    <dimen name="dime100sp">100sp</dimen>
+    <dimen name="dime30dp">30dp</dimen>
+    <dimen name="dime5dp">5dp</dimen>
+    <dimen name="dime50dp">50dp</dimen>
+    <dimen name="dime23sp">23sp</dimen>
+    <dimen name="dime48dp">48dp</dimen>
+    <dimen name="dime8dp">8dp</dimen>
+    <dimen name="dime70dp">70dp</dimen>
+    <dimen name="dime13sp">13sp</dimen>
+    <dimen name="dime100dp">100dp</dimen>
+    <dimen name="dime45dp">45dp</dimen>
+    <dimen name="dime180dp">180dp</dimen>
+    <dimen name="dime280dp">280dp</dimen>
+    <dimen name="dime4dp">4dp</dimen>
+    <dimen name="dime1dp">1dp</dimen>
+    <dimen name="dime40dp">40dp</dimen>
+    <dimen name="dime20dp">20dp</dimen>
+</resources>

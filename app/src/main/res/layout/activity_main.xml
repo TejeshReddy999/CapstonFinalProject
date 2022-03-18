@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/id_LinerSank"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="@dimen/dime5dp"
+    tools:context="com.example.sunny.moviemagazine.MainActivity">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/id_recyclerviwe"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </android.support.v7.widget.RecyclerView>
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|end"
+            android:layout_marginEnd="@dimen/margin10dp"
+            android:layout_marginTop="@dimen/dime220dp">
+
+            <android.support.design.widget.FloatingActionButton
+                android:layout_width="@dimen/dime70dp"
+                android:layout_height="@dimen/dime70dp"
+                android:onClick="fab"
+                android:elevation="@dimen/dime8dp"/>
+            <ImageView
+                android:layout_width="@dimen/dime70dp"
+                android:layout_height="@dimen/dime70dp"
+                android:contentDescription="@string/the_logout_image_on_fab_button_to_indicate_the_user_to_logout"
+                android:src="@drawable/logout"
+                android:elevation="9dp"/>
+        </FrameLayout>
+    </FrameLayout>
+</LinearLayout>
